@@ -8,7 +8,7 @@
 
 FROM alpine
 
-RUN echo "http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
+RUN echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
   && apk add --update-cache dante-server wireguard-tools openresolv ip6tables \
   && rm -rf /var/cache/apk/*
 
